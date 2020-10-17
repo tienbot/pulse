@@ -25,4 +25,9 @@
         height: 40px;
         font-size: 14px;
     }
+    &:hover {
+        cursor: pointer;
+        box-shadow: 3px 3px 20px $main-color;
+        transform: scale(1.1);
+    }
 }
