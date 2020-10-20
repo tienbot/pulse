@@ -246,9 +246,18 @@
 	.consultation {
 		padding-top: 30px;
 		padding-bottom: 30px;
+		.title_left {
+			text-align: center;
+			text-align-last: center;
+		}
 		&__desc {
 			margin-top: 20px;
 			font-size: 16px;
+			text-align: center;
+		}
+		#consultation-form {
+			margin: 0 auto;
+			margin-top: 36px;
 		}
 	}
 	.title_left{
@@ -307,6 +316,23 @@
 			text-align: center;
 		}
 	}
+	.overlay {
+		.modal {
+			padding: 10px;
+			width: 300px;
+			&__close {
+				top: 5px;
+        		right: 5px;	
+			}
+		}
+	}
+	.feed-form {
+		width: 280px;	
+	}
+	.button_submit {
+		width: 280px;
+	}
+	
 }
 
 // @media (max-width: 319px){
