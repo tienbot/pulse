@@ -1,4 +1,5 @@
 const gulp        = require('gulp');
+const deploy      = require('pulse');
 const browserSync = require('browser-sync');
 const sass        = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
@@ -65,6 +66,9 @@ gulp.task('images', function() {
         .pipe(gulp.dest("dist/img"));
 });
 
-
+gulp.task('deploy', function () {
+    return gulp.src("./dist/**/*")
+        .pipe(deploy())
+});
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'mailer', 'html', 'images'));
